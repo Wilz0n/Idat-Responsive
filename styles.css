@@ -4,7 +4,7 @@ body {
   margin: 0;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 h1 {
@@ -20,15 +20,14 @@ a {
   text-decoration: none;
 }
 
-img {
-  height: auto;
-  width: 13rem;
-  position: relative;
-  right: 69rem;
+.navbar {
+  display: flex;
+  padding: 0.5rem;
 }
 
-.navbar {
-  padding: 1rem;
+.nav-img img {
+  height: auto;
+  width: 13rem;
 }
 
 .hambur-menu {
@@ -40,18 +39,14 @@ img {
 }
 
 .navbar-list {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
   position: relative;
-  right: 3rem;
+  margin-left: auto;
   padding: 1rem;
-  margin: auto;
 }
 
 .navbar-items {
   padding: 1rem;
-  margin-left: 2rem;
+  margin-left: 1rem;
   display: inline-block;
 }
 
@@ -62,8 +57,9 @@ img {
     left: 3rem;
   }
   .navbar {
-    padding: 3rem;
+    padding: 1rem;
     border: 1px solid #0f0f0f;
+    display: flex;
   }
   .navbar-items {
     display: none;
@@ -72,10 +68,18 @@ img {
     display: block;
     font-size: 1.8rem;
   }
+  .hambur-menu summary {
+    margin-right: 1.3rem;
+  }
   .hambur-menu .navbar-item {
-    margin-bottom: 1rem;
+    margin-right: 1.5rem;
+    margin-bottom: 5px;
     text-decoration: none;
     font-size: 1.2rem;
+  }
+  .nav-img img {
+    height: auto;
+    width: 8rem;
   }
 }
 @media (min-width: 720px) {
@@ -86,13 +90,58 @@ img {
     margin-bottom: 5rem;
   }
 }
-.container-dad {
-  display: flex;
-  justify-content: center;
-  margin-left: 41rem;
+.container h1 {
+  margin-left: 1.5rem;
 }
 
-.container-son {
+.container-dad {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.container-son h1 {
+  font-size: 2.4rem;
+  text-decoration: underline;
+  color: red;
+}
+.container-son p {
+  text-align: center;
+  margin: auto;
+  padding: 2rem;
+  border: 0.4rem solid red;
+  border-radius: 1rem;
+}
+.container-son img {
   height: auto;
-  width: 13rem;
+  width: 34rem;
+  padding: 1rem;
+  position: relative;
+  bottom: 4rem;
+}
+
+@media (min-width: 1154px) {
+  .container h1 {
+    margin-left: 1.5rem;
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 1080px) {
+  .container h1 {
+    margin-left: -2rem;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .container-dad {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container-son img {
+    height: auto;
+    width: 20rem;
+    padding: 1rem;
+    position: relative;
+    bottom: 1rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
