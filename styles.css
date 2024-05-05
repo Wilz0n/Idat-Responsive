@@ -7,6 +7,14 @@ body {
   font-size: 1.3rem;
 }
 
+header {
+  border: 1px solid #222121;
+  background: linear-gradient(#222121, #0f0f0f);
+  border-radius: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
 h1 {
   font-size: 2rem;
 }
@@ -51,6 +59,13 @@ a {
 }
 
 @media (max-width: 720px) {
+  header {
+    border: 1px solid #222121;
+    background: linear-gradient(#222121, #0f0f0f);
+    border-radius: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
   .navbar-list {
     position: relative;
     bottom: 2.5rem;
